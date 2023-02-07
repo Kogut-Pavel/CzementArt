@@ -761,15 +761,15 @@ a {
 
 .team__text-left,
 .team__text-right {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.07em;
+    max-width: 517px;
+    font-size: 16px;
+    line-height: 116%;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
 }
 
 .team__text-left {
+    margin-left: auto;
     text-align: right;
 }
 
@@ -779,6 +779,9 @@ a {
 
 .team__image {
     max-height: 452px;
+}
+.team__image-right {
+    align-self: flex-end;
 }
 
 .team__image img {
