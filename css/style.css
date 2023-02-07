@@ -870,7 +870,7 @@ a {
     text-transform: uppercase;
 }
 
-.contacts__form #contacts {
+.contacts__form #contacts-form {
     display: flex;
     flex-direction: column;
 }
@@ -880,6 +880,7 @@ a {
     border: none;
     border-bottom: 1px solid var(--secondary);
     outline: none;
+    background: transparent;
 }
 
 .contacts__form input::placeholder {
@@ -899,6 +900,7 @@ a {
     gap: 5px;
     margin-top: 29px;
     margin-bottom: 34px;
+    cursor: pointer;
 }
 
 .contacts__form .checkbox-box input {
@@ -1010,6 +1012,10 @@ a {
     height: 1px;
     width: 175px;
     background: var(--secondary);
+}
+
+.objects__slider {
+    cursor: pointer;
 }
 
 /* footer */
