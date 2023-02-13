@@ -11,23 +11,31 @@ let iti = window.intlTelInput(input, {
 
 let slider = tns({
     container: '.training__slider',
-    items: 2,
     gutter: 20,
     controls: false,
     navPosition: 'bottom',
     mouseDrag: true,
+    responsive: {
+        768: {
+            items: 2,
+        },
+        320: {
+            items: 1,
+        },
+
+    }
 });
 
-let objectsSlider = tns({
-    container: '.objects__slider',
-    items: 4,
-    gutter: 20,
-    controls: false,
-    nav: false,
-    mouseDrag: true,
-    autoplay: true,
-    autoplayButtonOutput: false,
-});
+// let objectsSlider = tns({
+//     container: '.objects__slider',
+//     items: 4,
+//     gutter: 20,
+//     controls: false,
+//     nav: false,
+//     mouseDrag: true,
+//     autoplay: true,
+//     autoplayButtonOutput: false,
+// });
 
 
 document.addEventListener('DOMContentLoaded', function() {

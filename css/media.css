@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
     .h1 {
         font-size: 55px;
     }
@@ -46,6 +46,88 @@
         margin-bottom: 102px;
         padding: 28px 58px;
         font-size: 20px;
+    }
+
+    .advantages__row {
+        overflow-x: auto;
+    }
+
+    .catalog {
+        padding: 80px 0 200px 0;
+    }
+    
+    .catalog__tabs .list-group li {
+        font-size: 20px;
+    }
+
+    .catalog__list,
+    .catalog__list-group {
+        justify-content: center;
+    }
+
+    .consultation::before {
+        content: url(../images/consultation/decor-left-mini.png);
+    }
+    .consultation::after {
+        content: url(../images/consultation/decor-right-mini.png);
+    } 
+    .consultation__text {
+        margin-bottom: 25px;
+        line-height: 24px;
+    }
+    #consultation input {
+        max-width: 324px;
+    }
+    .consultation__btn {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        padding: 19px 118px;
+        font-size: 20px;
+        letter-spacing: 0.07em;
+    }
+
+    .training {
+        padding: 80px 0 100px 0;
+    }
+    .training__info {
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .training__text-left,
+    .training__text-right {
+        max-width: unset;
+    }
+    .training__slider .slide__bottom h4 {
+        font-size: 16px;
+    }
+    .training__btn-more {
+        margin-top: 35px;
+        justify-content: unset;
+    }
+    .training__btn-more a {
+        padding: 28px 29px;
+        font-size: 20px;
+    }
+    .tns-nav {
+        bottom: -58px;
+    }
+
+    .team__wrapper::before {
+        content: url(../images/logo.png);
+        top: -75px;
+    }
+    .team__text {
+        margin-bottom: 30px;
+    }
+    .team__advantages {
+        margin-bottom: 30px;
+    }
+    .team__col {
+        gap: 25px;
+    }
+    .team__btn {
+        padding: 12px 28px;
     }
 }
 
@@ -213,10 +295,6 @@
         top: 50%;
         transform: translate(-50%, 0%) rotate(-45deg); 
     }
-
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
     .container {
         padding: 0 24px;
     }
@@ -244,9 +322,226 @@
         padding: 22px 50px;
         font-size: 16px;
     }
+
+    .advantages {
+        padding: 23px 0;
+    }
+    .advantages__item {
+        padding: 8px 17px;
+    }
+    .advantages__name {
+        font-size: 20px;
+        letter-spacing: 0.07em;
+    }
+    .advantages__text {
+        min-width: 220px;
+    }
+
+    .catalog {
+        padding: 50px 0 50px 0;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .subtitle {
+        margin-bottom: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.07em;
+    }
+    .subtitle::after {
+        width: 72px;
+        right: -122px;
+    }
+    .catalog__text {
+        margin-bottom: 25px;
+    }
+    .catalog__text-start {
+        padding-right: 0;
+    }
+    .catalog__text,
+    .catalog__text-start {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
+    .catalog__tabs .list-group {
+        margin-bottom: 40px;
+        justify-content: unset;
+        gap: 8px;
+        overflow-x: auto;
+    }
+    .catalog__tabs .list-group li {
+        min-width: 160px;
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+    .catalog__list::before {
+        top: -20px;
+    }
+    .catalog__card {
+        padding: 20px 20px 15px 20px;
+        max-width: 272px;
+    }
+    .catalog__card:hover {
+        background: white;
+    }
+    .catalog__card h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .catalog__card-description {
+        display: none;
+    }
+    .catalog__card:hover .catalog__card-description {
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .consultation {
+        padding: 50px 0;
+    }
+    .consultation:before {
+        content: url(../images/consultation/decor-left-micro.png);
+    }
+    .consultation::after {
+        content: url(../images/consultation/decor-right-micro.png);
+    }
+    .consultation h2 {
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .consultation__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.04em;
+        text-transform: none;
+    }
+    #consultation {
+        flex-direction: column;
+        gap: 5px;
+    }
+    #consultation input {
+        max-width: 100%;
+        width: 380px;
+        font-size: 16px;
+    }
+    .consultation__btn {
+        width: 380px;
+        font-size: 16px;
+        padding: 22px;
+    }
+
+    .training {
+        padding: 50px 0;
+    }
+    .training__text-left {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .training__text-right {
+        font-size: 14px;
+    }
+    .training__slider .slide a {
+        min-height: 195px;
+    }
+    .training__btn-more {
+        width: auto;
+        margin-top: 62px;
+    }
+    .training__btn-more a {
+        text-align: center;
+        min-width: 271px;
+        padding: 20px 3px;
+        font-size: 16px;
+    }
+    .tns-nav {
+        bottom: -35px;
+        max-width: 100%;
+        width: 100%;
+        gap: 15px;
+    }
+    .training__slider .slide .training__play {
+        padding: 11px 20px 10px 21px;
+        width: 62px;
+        height: 43px;
+    }
+    .training__slider .slide .training__img svg {
+        width: 22px;
+        height: 21px;
+    }
+
+    .team {
+        padding: 50px 0 100px 0;
+    }
+    .team__wrapper::before {
+        content: none;
+    }
+    .team__text-start {
+        padding-right: 0;
+    }
+    .team__text-start,
+    .team__text {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+    .team__text {
+        margin-bottom: 25px;
+    }
+    .team__advantages {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+    .team__advantages-item {
+        min-width: 120px;
+    }
+    .team__advantages-item h2 {
+        margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 116%;
+        letter-spacing: 0.06em;
+    }
+    .team__advantages-descr {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .team__texts {
+        gap: 10px;
+        flex-direction: column;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.07em;
+    }
+    .team__text-left {
+        align-self: flex-end;
+    }
+    .team__col {
+        gap: 20px;
+    }
+    .team__images {
+        gap: 10px;
+    }
+    .team__images img {
+        height: 100%;
+    }
+    .team__btn {
+        position: absolute;
+        bottom: -40%;
+        left: 0;
+        padding: 15px 43px;
+        font-size: 16px;
+    }
 }
 
-@media (min-width: 320px) and (max-width: 479px) {
+@media (max-width: 479px) {
     .container {
         padding: 0 24px;
     }
@@ -279,5 +574,29 @@
     }
     .hero .media .tictok {
         height: 31px;
+    }
+    .header__cta-bottom {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 170px 0 13px 0;
+    }
+
+    #consultation input {
+        width: 271px;
+
+    }
+    .consultation__btn {
+        width: 271px;
+    }
+
+    .team {
+        padding: 50px 0 150px 0;
+    }
+    .team__btn {
+        width: 100%;
+        padding: 13px 40px;
+        bottom: -60%;
     }
 }

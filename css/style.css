@@ -81,6 +81,10 @@ a {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header */
 
 .header__top {
@@ -243,13 +247,12 @@ a {
 .advantages__row {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
 
 .advantages__item {
     position: relative;
     width: 396px;
-    padding: 22px 0;
+    padding: 22px 70px;
     text-align: center;
 }
 
@@ -344,7 +347,6 @@ a {
     justify-content: flex-end;
     margin-left: auto;
     gap: 15px;
-    flex-wrap: wrap;
 }
 
 .catalog__list {
@@ -429,6 +431,12 @@ a {
     border-radius: 10px;
 }
 
+.catalog__card-image img {
+    width: 235px;
+    height: 230px;
+    border-radius: 10px;
+}
+
 .catalog__card h4 {
     margin-bottom: 10px;
     font-family: 'Montserrat';
@@ -461,7 +469,7 @@ a {
     width: 590px;
     position: absolute;
     bottom: -84%;
-    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -481,9 +489,9 @@ a {
     opacity: 1;
 }
 
-.catalog__card:nth-child(4n) .catalog__card-description {
+.catalog__card:nth-child(2n + 1) .catalog__card-description {
     bottom: -84%;
-    left: -108%;
+    right: -108%;
 }
 
 .catalog__p-top {
@@ -678,6 +686,7 @@ a {
 }
 
 .training__slider .slide a {
+    min-height: 282px;
     display: inline-block;
     border: 1px solid var(--gray);
     border-radius: 5px;
@@ -693,10 +702,12 @@ a {
 
 .training__slider .slide .training__img {
     position: relative;
+    max-width: 100%;
 }
 
 .training__slider .slide .training__img img {
     border-radius: 4px;
+    width: 100%;
 }
 
 .training__slider .slide .training__play {
@@ -743,10 +754,10 @@ a {
 }
 
 .tns-nav {
-    width: 590px;
+    max-width: 590px;
+    width: calc(50% - 10px);
     position: absolute;
     right: 0;
-    /* transform: translateX(-50%); */
     bottom: -72px;
     display: flex;
     gap: 25px;
@@ -852,15 +863,16 @@ a {
     color: var(--secondary);
 }
 
-.team__row {
-    display: flex;
-    gap: 20px;
-}
-
 .team__col {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+}
+
+.team__row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .team__text-left,
@@ -873,7 +885,6 @@ a {
 }
 
 .team__text-left {
-    margin-left: auto;
     text-align: right;
 }
 
@@ -881,20 +892,28 @@ a {
     text-align: left;
 }
 
-.team__image {
-    max-height: 452px;
-}
-.team__image-right {
-    align-self: flex-end;
+.team__images {
+    position: relative;
+    justify-content: space-between;
 }
 
 .team__image img {
+    width: 100%;
     border-radius: 5px;
+}
+
+.team__image-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.team__image-right img {
+    justify-self: flex-start;
 }
 
 .team__btn {
     align-self: flex-start;
-    margin-top: auto;
     padding: 25px 68px;
     font-family: 'Montserrat';
     font-weight: 600;
