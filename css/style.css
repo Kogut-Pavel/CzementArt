@@ -958,6 +958,10 @@ a {
     margin-bottom: 30px;
 }
 
+.contacts__text-mobile {
+    display: none;
+}
+
 .contacts__wrapper {
     display: flex;
     align-items: center;
@@ -981,6 +985,7 @@ a {
 }
 
 .contacts__form input {
+    font-size: 16px;
     padding: 16px 16px 12px 0;
     border: none;
     border-bottom: 1px solid var(--secondary);
@@ -1004,7 +1009,7 @@ a {
     align-items: center;
     gap: 5px;
     margin-top: 29px;
-    margin-bottom: 34px;
+    margin-bottom: 31px;
     cursor: pointer;
 }
 
@@ -1148,6 +1153,10 @@ a {
     color: var(--primary);
 }
 
+.footer__middle .footer__link {
+    display: none;
+}
+
 .footer .media path {
     fill: var(--white);
 }
@@ -1159,6 +1168,9 @@ a {
 
 .footer .media .tictok {
     height: 36px;
+}
+#footer-middle-media {
+    display: none;
 }
 
 .footer__middle {

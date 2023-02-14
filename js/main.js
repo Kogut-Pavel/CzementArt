@@ -22,20 +22,33 @@ let slider = tns({
         320: {
             items: 1,
         },
-
     }
 });
 
-// let objectsSlider = tns({
-//     container: '.objects__slider',
-//     items: 4,
-//     gutter: 20,
-//     controls: false,
-//     nav: false,
-//     mouseDrag: true,
-//     autoplay: true,
-//     autoplayButtonOutput: false,
-// });
+let objectsSlider = tns({
+    container: '.objects__slider',
+    items: 4,
+    gutter: 20,
+    controls: false,
+    nav: false,
+    mouseDrag: true,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    responsive: {
+        1200: {
+            items: 4,
+        },
+        768: {
+            items: 3,
+        },
+        480: {
+            items: 2,
+        },
+        320: {
+            items: 1,
+        },
+    }
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {
