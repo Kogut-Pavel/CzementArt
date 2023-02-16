@@ -72,13 +72,28 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Бургер-меню
-    let menuBtn = document.querySelector('.menu-btn');
-    let menu = document.querySelector('.menu');
+    const toggleMenu = event => {
+        const target = event.target;
+        let menuBtn = document.querySelector('.menu-btn');
+        let menu = document.querySelector('.menu');
 
-    menuBtn.addEventListener('click', function() {
-        menu.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    });
+        const showMenu = () => {
+            menuBtn.classList.toggle('active');
+            menu.classList.toggle('active');
+        };
+
+        if (target.closest('.menu-btn')) {
+            showMenu();
+        } else if (!target.classList.contains('active') && !target.closest('.menu__wrapper') && menuBtn.classList.contains('active')) {
+            showMenu();
+        } else if (target.classList.contains('menu__link')) {
+            showMenu();
+        }
+    
+    };
+
+    document.addEventListener('click', toggleMenu);
+    
 
     let modalButtons = document.querySelectorAll('.open-modal'),
         overlay      = document.querySelector('#overlay-modal'),

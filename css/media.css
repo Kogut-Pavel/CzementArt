@@ -2,34 +2,6 @@
     .h1 {
         font-size: 55px;
     }
-
-    /* .h2 {
-        font-family: 'Montserrat';
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 123%;
-        letter-spacing: 0.07em;
-    }
-
-    .h3 {
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 116%;
-        letter-spacing: 0.06em;
-    }
-
-    .h4 {
-        font-size: 20px;
-        line-height: 120%;
-        letter-spacing: 0.07em;
-    }
-
-    .h5 {
-        font-size: 16px;
-        line-height: 116%;
-        letter-spacing: 0.05em;
-    } */
-
     .hero {
         padding: 40px 0 45px 0;
         background-position: 88% 100%;

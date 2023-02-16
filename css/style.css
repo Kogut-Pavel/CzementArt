@@ -203,6 +203,7 @@ a {
 }
 
 .hero__btn {
+    display: inline-block;
     margin-bottom: 97px;
     padding: 28px 102px;
     font-weight: 500;

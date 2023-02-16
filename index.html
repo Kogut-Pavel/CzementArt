@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
@@ -74,14 +76,14 @@
                         </div>
                         <div class="menu__middle">
                             <ul>
-                                <li><a href="#catalog">Для стен</a></li>
-                                <li><a href="#catalog">для пола</a></li>
-                                <li><a href="#catalog">Лаки</a></li>
+                                <li><a class="menu__link" href="#catalog">Для стен</a></li>
+                                <li><a class="menu__link" href="#catalog">для пола</a></li>
+                                <li><a class="menu__link" href="#catalog">Лаки</a></li>
                             </ul>
                             <ul>
-                                <li><a href="#about">О компании</a></li>
-                                <li><a href="#training">Обучение</a></li>
-                                <li><a href="#contacts">Контакты</a></li>
+                                <li><a class="menu__link" href="#about">О компании</a></li>
+                                <li><a class="menu__link" href="#training">Обучение</a></li>
+                                <li><a class="menu__link" href="#contacts">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="menu__bottom">
@@ -112,7 +114,7 @@
                     Декоративные особопрочные бесшовные покрытия из бетона для пола, стен и предметов интерьера.<br>
                     Доступные цены, высокое качество.
                 </p>
-                <button class="btn hero__btn open-modal" data-modal="1">обсудить проект</button>
+                <a href="#consult" class="btn hero__btn" data-modal="1">обсудить проект</a>
 
                 <div class="media">
                     <a href="https://vk.com/microbeton_russia" target="_blank">
@@ -403,7 +405,7 @@
             </div>
         </section> 
 
-        <section class="consultation">
+        <section class="consultation" id="consult">
             <div class="container">
                 <h2 class="h2">Заказать консультацию</h2>
                 <p class="consultation__text">
@@ -527,7 +529,7 @@
     
                             <div class="team__image team__image-right">
                                 <img src="images/team/image-2.jpg" alt="image">
-                                <button class="btn team__btn">Обсудить проект</button>
+                                <a href="#consult" class="btn team__btn">Обсудить проект</a>
                             </div>
                         </div>
                     </div>
@@ -700,7 +702,7 @@
 
             <div class="footer__middle">
                 <div class="footer__col">
-                    <button class="footer__btn">Заказать звонок</button>
+                    <button class="footer__btn open-modal" data-modal="1">Заказать звонок</button>
                     <a class="footer__link" href="tel:+79093651107">+7 909 365-11-07</a>
                     <div class="media" id="footer-middle-media">
                         <a href="https://vk.com/microbeton_russia" target="_blank">
